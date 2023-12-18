@@ -1,0 +1,8 @@
+<cdk-virtual-scroll-viewport itemSize="20" class="data_length" (scrolledIndexChange)="handleScroll($event)">
+  <div *cdkVirtualFor="let item of items; let i = index"> 
+
+    Render your data items here 
+    {{ item.Description }}
+  </div>
+
+</cdk-virtual-scroll-viewport> 
